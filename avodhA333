@@ -1,0 +1,11 @@
+lst = [50,"Python","JournalDev",100]
+lst_tuple = [x for x in zip(*[iter(lst)])]
+print(lst_tuple)
+
+
+
+---------------------------------------------
+create a tuple from multiple data types?
+
+tuplex = ("tuple", False, 3.2, 1)
+print(tuplex)
