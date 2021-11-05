@@ -1,0 +1,74 @@
+Find the minimum and maximum values of given list?
+
+my_list=[34,45,563,435,656,435,767,34,5676,45,2,2,2,3556,65]
+my_list=[34,45,563,435,656,435,767,34,5676,45,2,2,2,3556,65]
+a=max(my_list)
+b=min(my_list)
+
+
+print(a,b)
+---------------------------------------
+Write a python program to get the product of all elements in a list?
+my_list=[34,45,563,435,656,435,767,34,5676,45,2,2,2,3556,65]
+k=1
+for i in my_list:
+  k = i*k
+
+print(k)
+---------------------------------------------
+Write a program to remove the duplicates from the given list?
+def Remove(duplicate):
+    final_list = []
+    for num in duplicate:
+        if num not in final_list:
+            final_list.append(num)
+    return final_list
+
+duplicate =  [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
+print(Remove(duplicate))
+--------------------------------------------------
+
+Write a Python program to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings(create your own list and do the rest)?
+
+def match_words(words):
+  ctr = 0
+
+  for word in words:
+    if len(word) > 1 and word[0][0] == word[-1][-1]:
+      ctr += 1
+  return ctr
+
+print(match_words(['hellh','hello','vivek']))
+---------------------------------------------------
+
+L=[1,23,’hello’,1]
+print(type(L))
+
+ 
+
+a)list
+
+b)integer
+
+c)string
+
+d)None of the above
+
+
+answer- list
+--------------------------------------------------
+L=[10,20,30]
+
+print(L[1]*L[-1])
+
+ 
+
+a)Error
+
+b)300
+
+c)200
+
+d)600
+
+answer-600
